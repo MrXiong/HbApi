@@ -1,0 +1,105 @@
+ext {
+    android = [
+            compileSdkVersion: 27,
+            buildToolsVersion: "27.0.2",
+    ]
+
+    defaultConfig = [
+
+            minSdkVersion   : 17,
+            targetSdkVersion: 27,
+            versionCode     : 21900,
+            versionName     : "2.1.9"
+
+    ]
+
+    version = [
+            androidSupportSdkVersion: "27.1.1",
+            retrofitVersion         : "2.3.0",
+            okhttpVersion           : "3.6.0",
+            rxJavaVersion           : "2.1.3",
+            rxAndroidVersion        : "2.0.1",
+            //这里的版本要和library中的版本号保持一致，不然容易出现打包不过的情况
+    ]
+
+
+    dependencies = [
+            //support
+            "support-v4"           : "com.android.support:support-v4:${version["androidSupportSdkVersion"]}",
+            "appcompat-v7"         : "com.android.support:appcompat-v7:${version["androidSupportSdkVersion"]}",
+            "design"               : "com.android.support:design:${version["androidSupportSdkVersion"]}",
+            "cardview-v7"          : "com.android.support:cardview-v7:${version["androidSupportSdkVersion"]}",
+            "recyclerview-v7"      : "com.android.support:recyclerview-v7:${version["androidSupportSdkVersion"]}",
+            "gridlayout-v7"        : "com.android.support:gridlayout-v7:${version["androidSupportSdkVersion"]}",
+            "recyclerview-v7"      : "com.android.support:recyclerview-v7:${version["androidSupportSdkVersion"]}",
+            "multidex"             : "com.android.support:multidex:1.0.0",
+            "constraint-layout"    : "com.android.support.constraint:constraint-layout:1.0.2",
+
+            //network
+            "retrofit"             : "com.squareup.retrofit2:retrofit:${version["retrofitVersion"]}",
+            "okhttp"               : "com.squareup.okhttp3:okhttp:${version["okhttpVersion"]}",
+            "logging-interceptor"  : "com.squareup.okhttp3:logging-interceptor:${version["okhttpVersion"]}",
+            "rxjava"               : "io.reactivex.rxjava2:rxjava:${version["rxJavaVersion"]}",
+            "rxandroid"            : "io.reactivex.rxjava2:rxandroid:${version["rxAndroidVersion"]}",
+
+            //解析
+            "gson"                 : "com.squareup.retrofit2:converter-gson:${version["retrofitVersion"]}",
+            "jackson"              : "com.squareup.retrofit2:converter-jackson:${version["retrofitVersion"]}",
+            "moshi"                : "com.squareup.retrofit2:converter-moshi:${version["retrofitVersion"]}",
+            "fastjson"             : "org.ligboy.retrofit2:converter-fastjson-android:${version["retrofitVersion"]}",
+            "simplexml"            : "com.squareup.retrofit2:converter-simplexml:${version["retrofitVersion"]}",
+
+            //图片加载
+            "picasso"              : "com.squareup.picasso:picasso:2.5.2",
+            "glide"                : "com.github.bumptech.glide:glide:3.7.0",
+            "glide-integration"    : "com.github.bumptech.glide:okhttp3-integration:1.4.0@aar",
+
+            //view
+            "wheelPicker"          : "cn.aigestudio.wheelpicker:WheelPicker:1.1.2",
+            "ultra-pull-to-refresh": "cn.finalteam.loadingviewfinal:ultra-pull-to-refresh:1.0.1",
+            "loading-more-view"    : "cn.finalteam.loadingviewfinal:loading-more-view:1.0.1",
+            "swipe-refresh-layout" : "cn.finalteam.loadingviewfinal:swipe-refresh-layout:1.0.1",
+            "appbarspring"         : "com.github.todou:appbarspring:1.0.6",
+            "multitype"            : "me.drakeet.multitype:multitype:3.4.4",
+            "IndexRecyclerView"    : "com.github.jiang111:IndexRecyclerView:v1.1",
+            "Android-PickerView"   : "com.contrarywind:Android-PickerView:4.1.3",
+            "recyclerview-swipe"   : "com.yanzhenjie:recyclerview-swipe:1.1.4",
+            "material-dialogs"     : "com.afollestad.material-dialogs:core:0.9.6.0",
+            "avLoading"            : "com.wang.avi:library:2.1.3",
+            "bga-banner"            : "cn.bingoogolapple:bga-banner:2.2.4@aar",
+
+
+            //tools
+            "ggson"                : "com.google.code.gson:gson:2.6.2",
+            "butterknife"          : "com.jakewharton:butterknife:8.8.1",
+            "butterknife-compiler" : "com.jakewharton:butterknife-compiler:8.8.1",
+            "arouter-compiler"     : "com.alibaba:arouter-compiler:1.1.4",
+            "arouter":"com.alibaba:arouter-api:1.3.1",
+            "okhttpfinal"          : "cn.finalteam:okhttpfinal:2.0.7",
+            "okhttputils"          : "com.zhy:okhttputils:2.6.2",
+            "rvadapter"            : "com.zhy:base-rvadapter:3.0.3",
+            "adapter"              : "com.zhy:base-adapter:3.0.3",
+            "eventbus"             : "org.greenrobot:eventbus:3.1.1",
+            "zxing"                : "com.google.zxing:core:3.2.0",
+            "zxing-library"        : "com.king.zxing:zxing-lite:1.1.2",
+            "easypermissions"      : "pub.devrel:easypermissions:0.2.0",
+            "qmuiteam"             : "com.qmuiteam:qmui:1.0.6",
+            "yokeyword"            : "me.yokeyword:fragmentation:1.3.3",
+            "systembartint"        : "com.readystatesoftware.systembartint:systembartint:1.0.3",
+            "logger"               : "com.orhanobut:logger:2.2.0",
+            "greenDaoUpgradeHelper": "com.github.yuweiguocn:GreenDaoUpgradeHelper:v2.0.3",
+            "fastjson"             : "com.alibaba:fastjson:1.1.68.android",
+            "jsbridge"             : "com.github.lzyzsd:jsbridge:1.0.4",
+            "hotfix"             : "com.aliyun.ams:alicloud-android-hotfix:3.2.4",
+
+            //DB
+            "litepal"              : "org.litepal.android:core:2.0.0",
+            "greendao"             : "org.greenrobot:greendao:3.2.2",
+
+            "WheelPicker"              : "cn.aigestudio.wheelpicker:WheelPicker:1.1.2",
+            "SwipeToLoadLayout"             : "com.github.Aspsine:SwipeToLoadLayout:1.0.4",
+
+    ]
+
+
+}

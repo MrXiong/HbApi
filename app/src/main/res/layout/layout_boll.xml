@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_time"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="50dp"
+    android:paddingBottom="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主图"
+            android:textColor="@color/hb_time" />
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/hb_time" />
+
+        <TextView
+            android:id="@+id/tv_ma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MA"
+            android:textColor="@color/hb_time" />
+
+        <TextView
+            android:id="@+id/tv_boll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="BOLL"
+            android:textColor="@color/hb_time" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="副图"
+            android:textColor="@color/hb_time" />
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/hb_time" />
+
+        <TextView
+            android:id="@+id/tv_macd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MACD"
+            android:textColor="@color/hb_time" />
+
+        <TextView
+            android:id="@+id/tv_kdj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="KDJ"
+            android:textColor="@color/hb_time" />
+
+        <TextView
+            android:id="@+id/tv_rsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="RSI"
+            android:textColor="@color/hb_time" />
+
+        <TextView
+            android:id="@+id/tv_wr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="WR"
+            android:textColor="@color/hb_time" />
+
+    </LinearLayout>
+
+</LinearLayout>
