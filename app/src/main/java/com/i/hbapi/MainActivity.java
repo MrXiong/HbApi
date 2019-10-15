@@ -3,6 +3,7 @@ package com.i.hbapi;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -112,15 +113,27 @@ public class MainActivity extends AppCompatActivity {
 
 
     private boolean mNoFirst;
+    private Timer mTimer;
+    private TimerTask mTimerTask;
 
     private void getKline(final String period, final String symbol) {
         mNoFirst = false;
-        new Timer().schedule(new TimerTask() {
+        if (mTimer != null) {
+            mTimer.cancel();
+            mTimer = null;
+        }
+        if (mTimerTask != null) {
+            mTimerTask.cancel();
+            mTimerTask = null;
+        }
+        mTimer = new Timer();
+        mTimerTask = new TimerTask() {
             @Override
             public void run() {
                 doKline(period, symbol);
             }
-        }, 0, 2000);
+        };
+        mTimer.schedule(mTimerTask, 0, 2000);
 
     }
 
