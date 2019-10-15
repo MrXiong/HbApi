@@ -9,6 +9,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -71,4 +72,7 @@ dependencies {
     //annotationProcesso
     annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
     implementation project(':KLineChartLib')
+
+    //钱包相关
+    implementation 'org.bitcoinj:bitcoinj-core:0.15.5'
 }
