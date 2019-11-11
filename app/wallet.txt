@@ -1,0 +1,9 @@
+Imtoken
+火币
+币钱包
+
+btc地址：一样
+eth地址：一样
+
+btc私钥：imtoken无法导出；火币钱包和币钱包不一样
+eth私钥：Imtoken 和币钱包一样，火币钱包是0x+一样的私钥
