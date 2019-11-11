@@ -63,6 +63,7 @@ dependencies {
     implementation rootProject.ext.dependencies["butterknife"]
     implementation rootProject.ext.dependencies["rxjava"]
     implementation rootProject.ext.dependencies["rxandroid"]
+    implementation rootProject.ext.dependencies["rxjava-adapter"]
     //    implementation rootProject.ext.dependencies["easypermissions"]
     implementation rootProject.ext.dependencies["yokeyword"]
     implementation rootProject.ext.dependencies["systembartint"]
@@ -75,7 +76,6 @@ dependencies {
     //annotationProcesso
     annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
     implementation project(':KLineChartLib')
-
     //钱包相关
     implementation 'org.bitcoinj:bitcoinj-core:0.15'
     implementation 'org.web3j:core:3.3.1-android'

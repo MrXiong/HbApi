@@ -41,6 +41,7 @@ ext {
             "logging-interceptor"  : "com.squareup.okhttp3:logging-interceptor:${version["okhttpVersion"]}",
             "rxjava"               : "io.reactivex.rxjava2:rxjava:${version["rxJavaVersion"]}",
             "rxandroid"            : "io.reactivex.rxjava2:rxandroid:${version["rxAndroidVersion"]}",
+            "rxjava-adapter"       : "com.squareup.retrofit2:adapter-rxjava:2.6.2",
 
             //解析
             "gson"                 : "com.squareup.retrofit2:converter-gson:${version["retrofitVersion"]}",
@@ -66,15 +67,14 @@ ext {
             "recyclerview-swipe"   : "com.yanzhenjie:recyclerview-swipe:1.1.4",
             "material-dialogs"     : "com.afollestad.material-dialogs:core:0.9.6.0",
             "avLoading"            : "com.wang.avi:library:2.1.3",
-            "bga-banner"            : "cn.bingoogolapple:bga-banner:2.2.4@aar",
-
+            "bga-banner"           : "cn.bingoogolapple:bga-banner:2.2.4@aar",
 
             //tools
             "ggson"                : "com.google.code.gson:gson:2.6.2",
             "butterknife"          : "com.jakewharton:butterknife:8.8.1",
             "butterknife-compiler" : "com.jakewharton:butterknife-compiler:8.8.1",
             "arouter-compiler"     : "com.alibaba:arouter-compiler:1.1.4",
-            "arouter":"com.alibaba:arouter-api:1.3.1",
+            "arouter"              : "com.alibaba:arouter-api:1.3.1",
             "okhttpfinal"          : "cn.finalteam:okhttpfinal:2.0.7",
             "okhttputils"          : "com.zhy:okhttputils:2.6.2",
             "rvadapter"            : "com.zhy:base-rvadapter:3.0.3",
@@ -90,14 +90,14 @@ ext {
             "greenDaoUpgradeHelper": "com.github.yuweiguocn:GreenDaoUpgradeHelper:v2.0.3",
             "fastjson"             : "com.alibaba:fastjson:1.1.68.android",
             "jsbridge"             : "com.github.lzyzsd:jsbridge:1.0.4",
-            "hotfix"             : "com.aliyun.ams:alicloud-android-hotfix:3.2.4",
+            "hotfix"               : "com.aliyun.ams:alicloud-android-hotfix:3.2.4",
 
             //DB
             "litepal"              : "org.litepal.android:core:2.0.0",
             "greendao"             : "org.greenrobot:greendao:3.2.2",
 
-            "WheelPicker"              : "cn.aigestudio.wheelpicker:WheelPicker:1.1.2",
-            "SwipeToLoadLayout"             : "com.github.Aspsine:SwipeToLoadLayout:1.0.4",
+            "WheelPicker"          : "cn.aigestudio.wheelpicker:WheelPicker:1.1.2",
+            "SwipeToLoadLayout"    : "com.github.Aspsine:SwipeToLoadLayout:1.0.4",
 
     ]
 
